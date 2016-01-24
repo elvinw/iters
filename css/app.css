@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Mono);
+body, h1, h2, h3, h4, h5, h6, p {
+  font-family: 'PT Mono' !important;
+}
+
+body {
+  background-color:#f2ecd8;
+}
+
+.callout.primary {
+  background-color:#7C8EA6;
+  color: #485B73;
+}
+
+.subheader  {
+  color: #485B73;
+}
+.button {
+  background-color: #594746;
+  float: right;
+}
+.button:hover {
+  background-color: #f2ecd8;
+  border: 1px #594746 solid;
+  color: #594746;
+}
+
+
+.reporting {
+  padding-top:2em;
+  padding-bottom:2em;
+}
+
+.reporting p {
+  color: red;
+  padding-bottom:2em;
+}
+
+form.custom .custom.dropdown {
+  height: 45px;
+}
+label {
+  margin-bottom: 10px;
+}
+form.custom .custom.dropdown {
+  padding-top: 5px;
+}
+form.custom .custom.dropdown .selector {
+  top: 5px;
+}
+.button {
+  height: 45px;
+  margin-top: 25px;
+}
+
+.button:disabled{
+  background-color:#666 !important;
+}
+
+/* form styles */
+
+label {
+  color: #777;
+}
+form input[type="text"], select#subject {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px #cacaca solid;
+  box-shadow: none;
+  color: #aaa;
+}
+
+form textarea {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
