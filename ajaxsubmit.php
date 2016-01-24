@@ -1,5 +1,5 @@
 <?php
-$connection = new mysqli('localhost', 'sql_admin', 'JTQfHb3uXG9mSqua', 'itersdba');
+$connection = new mysqli('localhost', 'sql_admin', 'rXNNbTSdha4dcVxs', 'itersdba');
 
 // Establishing connection with SQL server...
 
