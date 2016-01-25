@@ -10,7 +10,7 @@ Part of AMP Agency interview coding challenge.
 
 ### Known Issues
 - need help with MySQL connection
-- 500 error on form submissions
+- 500 error on form submissions, which blocks accessibility to the thankyou.php confirmation page.
 
 ### Colophon
 Built on MAMP with atom.io. Uses PHP 7 and jQuery 2.2.0
