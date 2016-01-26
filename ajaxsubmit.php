@@ -1,5 +1,10 @@
 <?php
-$connection = new mysqli('localhost', 'sql_admin', 'rXNNbTSdha4dcVxs', 'itersdba');
+$servername = "localhost";
+$username = "sql_admin";
+$password = "mLNyhR7qnVZsmcQS";
+$dbname = "itersdba";
+
+$connection = mysqli_connect($servername, $username, $password, $dbname);
 
 // Establishing connection with SQL server...
 
@@ -17,7 +22,9 @@ $subject2=$_POST['subject'];
 $message2=$_POST['message'];
 
 //Insert query
-$insertquery = 'INSERT INTO form_element(name, email, subject, message) VALUES ('$name2', '$email2', '$subject2', '$message2')';
+$insertquery = "INSERT INTO form_element (name, email, subject, message) VALUES ('$name2', '$email2', '$subject2', '$message2')";
+
+
 if (mysqli_query($connection, $insertquery)) {
   echo 'new record entered';
 } else {
