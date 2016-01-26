@@ -11,7 +11,6 @@ Part of AMP Agency interview coding challenge.
 ### Known Issues
 - ~~need help with MySQL connection~~
 - ~~500 error on form submissions, which blocks accessibility to the thankyou.php confirmation page.~~
-
 - Database input and output not secured.
 - thankyou.php not accessible
 
