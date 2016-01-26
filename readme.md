@@ -9,8 +9,11 @@ Part of AMP Agency interview coding challenge.
 - Landing page (thankyou.php) triggered by form submission
 
 ### Known Issues
-- need help with MySQL connection
-- 500 error on form submissions, which blocks accessibility to the thankyou.php confirmation page.
+- ~~need help with MySQL connection~~
+- ~~500 error on form submissions, which blocks accessibility to the thankyou.php confirmation page.~~
+
+- Database input and output not secured.
+- thankyou.php not accessible
 
 ### Colophon
 Built on MAMP with atom.io. Uses PHP 7 and jQuery 2.2.0
