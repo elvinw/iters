@@ -1,5 +1,5 @@
 <!--
-/iters
+/iters default
 -->
 
 <!doctype html>
@@ -41,6 +41,7 @@
     </div>
     <div class="row column">
       <div class="small-12 medium-10 large-12 columns small-centered">
+        <!-- FORM! -->
         <form class="custom" action="thankyou.php" method="post">
           <div class="row">
             <div class="large-6 medium-6 small-12 columns">

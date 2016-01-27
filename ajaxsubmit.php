@@ -1,12 +1,14 @@
 <?php
+
+// Login Info
 $servername = "localhost";
 $username = "sql_admin";
-$password = "mLNyhR7qnVZsmcQS";
+$password = "w6PsPx7exHD6zVTF";
 $dbname = "itersdba";
 
-$connection = mysqli_connect($servername, $username, $password, $dbname);
+// Establishing connection...
 
-// Establishing connection with SQL server...
+$connection = mysqli_connect($servername, $username, $password, $dbname);
 
 if (!$connection) {
   die('Could not connect: ' . mysql_error());
@@ -14,6 +16,8 @@ if (!$connection) {
   echo "connected";
 }
 
+// Scrubbing data...
+// include 'sanitize.php';
 
 //Fetching Values from URL
 $name2=$_POST['name'];

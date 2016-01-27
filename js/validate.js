@@ -32,7 +32,7 @@ $(document).ready(function() {
     } else {
       $.ajax({
         type: "POST",
-        url: "ajaxsubmit.php",
+        url: "ajaxsubmit.php", 
         data: dataString,
         success: function() {
           alert(dataString);
