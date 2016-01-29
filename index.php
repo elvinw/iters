@@ -11,8 +11,8 @@
   <title>IT Emergency Response System</title>
   <link rel="stylesheet" href="css/foundation.css" type='text/css'>
   <link rel="stylesheet" href="css/app.css" type='text/css'>
-  <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script> -->
-  <script src="js/jquery-2.2.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <!-- <script src="js/jquery-2.2.0.min.js"></script> -->
   <script type="text/javascript" src="js/validate.js"></script>
   <script type="text/javascript" src="js/pirate-speak.js"></script>
 </head>
@@ -42,7 +42,7 @@
     <div class="row column">
       <div class="small-12 medium-10 large-12 columns small-centered">
         <!-- FORM! -->
-        <form class="custom" action="thankyou.php" method="post">
+        <form class="custom">
           <div class="row">
             <div class="large-6 medium-6 small-12 columns">
               <label>
@@ -87,9 +87,9 @@
               </select>
             </div>
           </div>
-          <div class="row  ">
+          <div class="row ">
             <div class="large-12 small-12 columns expand" id="submit-box">
-              <input type="submit" id="submit" class="button expand" value="Submit">
+                <input type="submit" id="submit" class="button expand" value="Submit">
             </div>
           </div>
         </form>

@@ -82,9 +82,7 @@ var Dictionary = {
   take: [2, {
     a_hike: "walk the plank"
   }]
-
 };
-
 
 function translate(text) {
   var hop = 1;
@@ -99,6 +97,30 @@ function translate(text) {
       text = text.slice(hop, text.length);
     } else {
       var info = recursiveCheck(text, Dictionary[text[0]]);
+      textToReturn = (info.hop == 1) ? text[0] : info.text;
+      text = text.splice(info.hop, text.length);
+    }
+    if (text.length > 0) {
+      textToReturn += ' ' + translate(text);
+    }
+
+  }
+  return textToReturn;
+}
+
+function reverseTranslate(text) {
+  var hop = 1;
+  var textToReturn = "";
+  //checking if the text is already split, if not we split
+  if (typeof text === 'string') {
+    text = text.split(' ');
+  }
+  if (text.length > 0) {
+    if (typeof reverseDictionary[text[0]] == 'undefined' || typeof reverseDictionary[text[0]] === 'string') {
+      textToReturn = (reverseDictionary[text[0]] || text[0]);
+      text = text.slice(hop, text.length);
+    } else {
+      var info = recursiveCheck(text, reverseDictionary[text[0]]);
       textToReturn = (info.hop == 1) ? text[0] : info.text;
       text = text.splice(info.hop, text.length);
     }
@@ -135,23 +157,54 @@ function recursiveCheck(text, arr) {
 
 
 $(document).ready(function() {
+  var pirateOn = false;
+  var reversePh = $('#message').attr('placeholder');
+  var orig_msg = '';
+
+  $('#message').change(function(){
+    orig_msg = $('#message').val();
+  });
+
   $("#subject").change(function() {
 
     console.log("dropdown change detected");
 
     var selection = $("#subject").val();
     var msg_content = $('#message').val();
+    var placeholder = $('#message').attr('placeholder');
 
-    if (selection == "pirate" && msg_content !== '') {
-      console.log("Arrr!");
-      var out = translate(msg_content);
-      $('#message').val(out);
-    } else if (selection == "pirate" && msg_content == '') {
-      console.log("initate std pirate response");
-      var placeholder = $('#message').attr('placeholder');
-      console.log("received placeholder package: " + placeholder);
-      var out = translate(placeholder);
-      $('#message').attr('placeholder', out).val("").focus().blur();
+    /* check if "pirate" is selected */
+    if (selection === "pirate") {
+      pirateOn = true;
+      console.log(pirateOn);
+    } else {
+      pirateOn = false;
+      console.log(pirateOn);
     }
+
+    if (pirateOn == true) {
+      if (msg_content !== '') {
+        console.log('translating message');
+        var out = translate(msg_content);
+        $('#message').val(out);
+      } else if (msg_content == '') {
+        var out = translate(placeholder);
+        $('#message').attr('placeholder', out).val("").focus().blur();
+      }
+    } else if (pirateOn == false) {
+      if (msg_content == '') {
+        console.log('reverting placeholder');
+        var out = reversePh;
+        $('#message').attr('placeholder', out).val("").focus().blur();
+      } else if (msg_content !== '') {
+        console.log('reverting message');
+        var out = orig_msg;
+        $('#message').val(out);
+      }
+    } else {
+      var out = orig_msg;
+      $('#message').val(out);
+    }
+
   });
 });

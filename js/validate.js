@@ -18,7 +18,7 @@ $(document).ready(function() {
   });
 
   /* parse input for processing */
-  $("#submit").click(function() {
+  $("input#submit").click(function() {
     var name = $("#name").val();
     var email = $("#email").val();
     var subject = $("#subject").val();
@@ -32,10 +32,12 @@ $(document).ready(function() {
     } else {
       $.ajax({
         type: "POST",
-        url: "ajaxsubmit.php", 
+        url: "ajaxsubmit.php",
         data: dataString,
-        success: function() {
-          alert(dataString);
+        success: function(tymsg) {
+          $("form").fadeOut(300, function() {
+            $("form").html(tymsg).fadeIn(200);
+          });
         }
       });
       return false;

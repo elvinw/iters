@@ -13,8 +13,17 @@ $connection = mysqli_connect($servername, $username, $password, $dbname);
 if (!$connection) {
   die('Could not connect: ' . mysql_error());
 } else {
-  echo "connected";
+  //echo "connected";
 }
+
+$success = "
+<div class=\"row column text-center\">
+  <h5>Thank you for your alert. Someone will be with you shortly.</h5>
+</div>
+<div class=\"row column text-center\">
+  <a href=\"/iters\"><h6>Return</h6></a>
+</div>
+";
 
 // Scrubbing data...
 // include 'sanitize.php';
@@ -30,7 +39,7 @@ $insertquery = "INSERT INTO form_element (name, email, subject, message) VALUES 
 
 
 if (mysqli_query($connection, $insertquery)) {
-  echo 'new record entered';
+  echo "$success";
 } else {
   echo 'error';
 }
