@@ -9,10 +9,10 @@ Part of AMP Agency interview coding challenge.
 - Fade-in thank you landing page triggered by form submission
 - Fixed database connectivity and query issues
 - When "Arr!" is no longer selected, the form reverts the translated message/placeholder back into regular English
+- /piters, a uniquely pirate IT experience
 
 ## To Do
-- I/O sanitation
-- ~~Reverse pirate-speak~~
+
 
 
 #### Colophon
