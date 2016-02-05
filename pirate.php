@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IT Emergency Response System</title>
   <link rel="stylesheet" href="css/foundation.css" type='text/css'>
-  <link rel="stylesheet" href="css/app.css" type='text/css'>
+  <link rel="stylesheet" href="css/pirate.css" type='text/css'>
   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   <!-- <script src="js/jquery-2.2.0.min.js"></script> -->
   <script type="text/javascript" src="js/validate.js"></script>
@@ -21,13 +21,11 @@
 
   <div class="callout large primary">
     <div class="row column ">
-      <div class="small-12 medium-11 large-12 columns small-centered">
-        <h1>/iters</h1>
-        <h2 class="subheader">IT Emergency Response System</h2>
-        <h5><i>"If we made a dollar for every hour we spend fixing things, we would still be poor."</i></h5>
-        <hr>
-        <h6>We will not respond to requests to debug code. Please contact the web developers directly for programming needs.</h6>
-        <p><a href="pirate.php">Arrrr, ye speak pirate?</a></p>
+      <div class="small-12 medium-12 large-8 columns">
+        <h1>/piters</h1>
+        <h2 class="subheader">Arrrrrrr, have you a briny problem on ye battlestation?</h2>
+        <br>
+        <h6>If ye need help scrubbin' ye logbooks, do it yerself! Ye got yer own overflowing stacks, ye lazy ass. Arrr.</h6>
       </div>
     </div>
   </div>
@@ -36,7 +34,7 @@
     <div class="row column">
       <div class="large-8 medium-10 medium-centered centered columns">
         <p>
-          Most cases can be fixed by restarting the device or the program. Please only use ITERS when the problem prevents you from working.
+          Before ye bitch and moan to us, have ye tried lowerin' an' raising ye sails again? Tha's from pirate academy 101!
         </p>
       </div>
     </div>

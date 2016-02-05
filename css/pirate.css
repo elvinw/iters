@@ -1,28 +1,33 @@
-@import url(https://fonts.googleapis.com/css?family=PT+Mono);
+@import url(https://fonts.googleapis.com/css?family=Rock+Salt|Montserrat:400,700);
 body, h1, h2, h3, h4, h5, h6, p {
   font-family: 'PT Mono' !important;
 }
 
-a {
-  color: #402325;
-}
-
-a:hover {
-  color: #fff;
-}
-
 body {
-  background-color:#f2ecd8;
+  background-color:#402325;
+}
+
+a { color: #aaa; }
+
+h5 {
+  color: #aaa;
 }
 
 .callout.primary {
-  background-color:#7C8EA6;
-  color: #485B73;
+  background: #000 url('../img/pir-bg.jpg') no-repeat right;
+  background-size: contain;
+  color: #0f0;
 }
 
-.subheader  {
-  color: #485B73;
+.subheader {
+  color: #0f0;
 }
+
+
+.callout.primary h1 {
+  font-family: 'Rock Salt', cursive;
+}
+
 .button {
   background-color: #594746;
   float: right;
@@ -82,4 +87,5 @@ form textarea {
   background-color: transparent;
   box-shadow: none;
   border: none;
+  color: #aaa;
 }
