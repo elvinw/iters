@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Rock+Salt|Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=PT+Mono);
 body, h1, h2, h3, h4, h5, h6, p {
   font-family: 'PT Mono' !important;
 }
@@ -23,10 +23,6 @@ h5 {
   color: #0f0;
 }
 
-
-.callout.primary h1 {
-  font-family: 'Rock Salt', cursive;
-}
 
 .button {
   background-color: #594746;

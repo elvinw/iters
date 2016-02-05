@@ -17,5 +17,3 @@ Part of AMP Agency interview coding challenge.
 
 #### Colophon
 Built on MAMP with atom.io. Uses PHP 7 and jQuery 2.2.0
-
-**Warning: Not tested on a live web server. My web host is not configured for PHPMyAdmin due to Statamic CMS. Please attempt to debug and run through localhost.**
